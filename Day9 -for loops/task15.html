@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      // take a number from user and find it's binary value ( in 0s and 1s)
+
+      let rem;
+      let number = [];
+      let bin = [];
+      let binaryString = "";
+
+      const toBinary = (num) => {
+        while (num > 0) {
+          rem = num % 2;
+          number.push(rem);
+          num = parseInt(num / 2);
+        }
+        return number;
+      };
+
+      console.log(number);
+
+      toBinary(11).forEach((element) => {
+        binaryString = element + binaryString;
+        console.log(binaryString)
+      });
+
+      console.log(binaryString);
+
+      // hint : prepend all remainders in a string.
+    </script>
+  </body>
+</html>

@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      // take a number from user
+
+      // append same number to it for 5 times and then multiply the result with same number for 3 times
+      // note: use single loop.
+
+      let num = "5";
+      let result = "";
+      let pow;
+
+      for (let i = 1; i <= 5; i++) {
+        result = num + result;
+        console.log(result);
+        if (result.length === 5) {
+            pow = Math.pow(result, 3);
+            console.log(pow);
+        }
+    }
+    
+      // hint:  set a counter = 8
+    </script>
+  </body>
+</html>

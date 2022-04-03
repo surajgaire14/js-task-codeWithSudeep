@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      let number = prompt("Enter a number");
+
+      //check if number is exactly divided by 10
+      // if it is divided, then determine if it is a even number or odd number
+
+      // if it in not divided, find the remainder
+      // determine if remainder is even or odd.
+      // number = number % 10 && number % 2
+      // let result = number === 0 ? "even number " : "odd number"
+      // console.log(result)
+      if (number % 10 === 0)
+        console.log("it is divided by 10 and it is even number");
+      else if (number % 2 === 0 && number % 10 !== 0)
+        console.log("it is even number but not divided by 10");
+      else console.log("it is odd number");
+    </script>
+  </body>
+</html>

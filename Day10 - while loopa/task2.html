@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      // find the sum of first 10 even natural numbers using while loop
+      let sum = 0;
+      // let number = [];
+
+      // const evenNatural = (num) => {
+      //   for (let i = 1; i <= num; i++) {
+      //     number.push(i * 2);
+      //   }
+      // };
+      // //2,4,6,8,10,12,14,16,18,20
+      // evenNatural(10);
+      // console.log(number);
+
+      // number.forEach((num) => {
+      //   sum = sum + num;
+      // });
+
+      // console.log(sum);
+
+      let num = 0;
+
+      while (num <= 20) {
+        if (num % 2 === 0) {
+          sum = sum + num;
+          num = num +2;
+        }
+      }
+
+      console.log(sum);
+    </script>
+  </body>
+</html>
